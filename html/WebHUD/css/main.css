@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url("../font/trebuc.ttf");
+}
+@font-face {
+    font-family: 'halfife2regular';
+    src: url("../font/hl2.woff2");
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    overflow: hidden;
+    align-items: flex-end;
+}
+#leftContainer {
+    flex-grow: 1;
+}
+#leftContainer, #rightContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 32px;
+}
+
+.bg {
+    padding: 8px;
+    background: rgba(0, 0, 0, 0.75);
+    width: 128px;
+    height: 48px;
+    border-radius: 8px;
+    margin-left: 16px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: yellow;
+    font-family: 'Trebuchet MS';
+}
+
+.number {
+    font-family: 'halfife2regular';
+    font-size: 36px;
+}
+
+.numbersmall {
+    font-family: 'halfife2regular';
+    font-size: 24px;
+}
+
+.text > .label {
+    align-self:flex-end;
+}
+.text > span {
+    flex-grow: 1;
+}
+#alt {
+    width:98px;
+}
+#ammo {
+    width: 160px;
+}
